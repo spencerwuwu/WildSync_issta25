@@ -1,0 +1,28 @@
+diff --git a/meson.build b/meson.build
+index 49f5515..9c6172f 100644
+--- a/meson.build
++++ b/meson.build
+@@ -79,6 +79,9 @@ subdir('lib')
+ if get_option('bin') or get_option('tests')
+   subdir('bin')
+ endif
++if get_option('new_fuzzers')
++  subdir('new_fuzzers')
++endif
+ if get_option('tests')
+    subdir('test')
+ endif
+diff --git a/meson_options.txt b/meson_options.txt
+index f54a639..00a9971 100644
+--- a/meson_options.txt
++++ b/meson_options.txt
+@@ -4,6 +4,8 @@ option('docs', type : 'boolean', value : true,
+   description: 'Build documentation')
+ option('bin', type : 'boolean', value : true,
+   description: 'Build binaries')
++option('new_fuzzers', type : 'boolean', value : true,
++  description: 'Build binaries')
+ option('tests', type : 'boolean', value : true,
+   description: 'Build tests')
+ option('fuzzer_ldflags', type : 'string',
+

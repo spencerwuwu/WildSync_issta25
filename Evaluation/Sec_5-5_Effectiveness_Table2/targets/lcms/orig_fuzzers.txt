@@ -1,0 +1,15 @@
+cms_cgats_fuzzer
+cms_cie_cam02_fuzzer
+cms_devicelink_fuzzer
+cms_dict_fuzzer
+cms_gdb_fuzzer
+cmsIT8_load_fuzzer
+cms_md5_fuzzer
+cms_overwrite_transform_fuzzer
+cms_postscript_fuzzer
+cms_profile_fuzzer
+cms_transform_all_fuzzer
+cms_transform_extended_fuzzer
+cms_transform_fuzzer
+cms_universal_transform_fuzzer
+cms_virtual_profile_fuzzer

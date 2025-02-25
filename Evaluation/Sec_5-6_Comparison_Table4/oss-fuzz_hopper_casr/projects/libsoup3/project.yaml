@@ -1,0 +1,13 @@
+homepage: "https://libsoup.org/libsoup-3.0"
+language: c
+sanitizers:
+  - address
+  - undefined
+  - memory
+main_repo: 'https://gitlab.gnome.org/GNOME/libsoup.git'
+
+fuzzing_engines:
+  - afl
+  - honggfuzz
+  - libfuzzer
+

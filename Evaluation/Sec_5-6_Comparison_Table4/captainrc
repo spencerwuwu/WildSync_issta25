@@ -1,0 +1,42 @@
+###
+## Configuration parameters
+###
+
+# WORKDIR: path to directory where shared volumes will be created
+WORKDIR=./workdir/
+
+# REPEAT: PLEASE DO NOT change this
+REPEAT=5
+
+# CHANGE ME (secondes)
+TIMEOUT=86400
+
+# FUZZER: PLEASE DO NOT change this
+FUZZERS=(hopper)
+
+# CHANGE ME (libraries to fuzz)
+hopper_TARGETS=( 
+    #cairo
+    #fribidi
+    #cjson
+    #json-c
+    #krb5
+    #lcms
+    #libarchive
+    #libass
+    #libgd
+    #libheif
+    #libpcap
+    #libpng
+    #libtiff
+    #libvnc
+    #libyang
+    #lmdb
+    #mxml
+    #vorbis
+    #yyjson
+    #zlib
+    #libcue
+    #libharu
+)
+

@@ -1,0 +1,3 @@
+magic_fuzzer
+magic_fuzzer_fd
+magic_fuzzer_loaddb

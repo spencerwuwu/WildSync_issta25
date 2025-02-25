@@ -1,0 +1,57 @@
+###
+## Configuration parameters
+###
+
+# WORKDIR: change me if you would like to storge data somewhere else 
+WORKDIR=./workdir
+
+# REPEAT: PLEASE DO NOT change this
+REPEAT=5
+
+# CHANGE ME (secondes)
+TIMEOUT=86400
+
+# PLEASE DO NOT change this
+# ONLY_CATEGORY: if set to 1, only run new harnesses
+#                if set to 2, only run original OSS-Fuzz harnesses
+#                default 0, use both
+ONLY_CATEGORY=0
+
+# FUZZER: PLEASE DO NOT change this
+FUZZERS=(libfuzzer)
+
+# CHANGE ME (libraries to fuzz)
+libfuzzer_TARGETS=( 
+  #cairo
+  #cjson
+  #fribidi
+  #gdk-pixbuf
+  #json-c
+  #krb5
+  #lcms
+  #leptonica
+  #libarchive
+  #libass
+  #libgd
+  #libheif
+  #libpcap
+  #libplacebo
+  #libpng
+  #libsoup3
+  #libtiff
+  #libvnc
+  #libyang
+  #lmdb
+  #mxml
+  #vorbis
+  #yyjson
+  #zlib
+  #libcue
+  #libharu
+  #libxmlb
+)
+
+
+# CHANGE ME
+#libfuzzer_libass_PROGRAMS=(libass__ass_read_styles__0)
+

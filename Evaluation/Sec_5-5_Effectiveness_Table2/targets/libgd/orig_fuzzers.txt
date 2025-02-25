@@ -1,0 +1,11 @@
+bmp_target
+gd2_target
+gd_image_string_fuzzer
+gd_target
+gif_target
+jpeg_target
+png_target
+tga_target
+tiff_target
+wbmp_target
+webp_target

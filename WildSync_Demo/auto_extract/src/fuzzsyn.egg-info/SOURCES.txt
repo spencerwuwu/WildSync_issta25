@@ -1,0 +1,16 @@
+setup.cfg
+setup.py
+src/fuzzsyn/__init__.py
+src/fuzzsyn/utils.py
+src/fuzzsyn.egg-info/PKG-INFO
+src/fuzzsyn.egg-info/SOURCES.txt
+src/fuzzsyn.egg-info/dependency_links.txt
+src/fuzzsyn.egg-info/requires.txt
+src/fuzzsyn.egg-info/top_level.txt
+src/fuzzsyn/backtrace/__init__.py
+src/fuzzsyn/backtrace/backtrace.py
+src/fuzzsyn/backtrace/utils.py
+src/fuzzsyn/gen_harness/__init__.py
+src/fuzzsyn/gen_harness/combine_code.py
+src/fuzzsyn/gen_harness/consume_external.py
+src/fuzzsyn/gen_harness/consume_harness.py

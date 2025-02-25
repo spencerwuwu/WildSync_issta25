@@ -1,0 +1,13 @@
+
+targets = [
+    #"c-ares",
+    #"cjson",
+    #"file",
+    #"lcms",
+    #"libaom",
+    #"libpcap",
+    #"libpng",
+    #"libvpx",
+    #"sqlite3",
+    #"zlib",
+]

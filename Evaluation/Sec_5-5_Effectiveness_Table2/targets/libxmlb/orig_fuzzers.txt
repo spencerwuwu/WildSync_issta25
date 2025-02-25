@@ -1,0 +1,2 @@
+xb_compile_query-fuzzer
+xb_dump-fuzzer

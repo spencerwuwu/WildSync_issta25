@@ -1,0 +1,8 @@
+#libgd__gdImageColorClosest__0
+libgd__gdImageColorClosest__1
+libgd__gdImageColorDeallocate__0
+libgd__gdImageColorExact__0
+libgd__gdImageColorResolve__0
+libgd__gdImageCopyRotated__0
+#libgd__gdImagePaletteCopy__0
+libgd__gdImagePaletteCopy__1

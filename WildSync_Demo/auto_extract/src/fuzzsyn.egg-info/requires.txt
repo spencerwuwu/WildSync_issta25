@@ -1,0 +1,5 @@
+networkx==2.6.3
+tree-sitter==0.20.1
+pydot==1.4.1
+typer==0.4.1
+loguru==0.6.0

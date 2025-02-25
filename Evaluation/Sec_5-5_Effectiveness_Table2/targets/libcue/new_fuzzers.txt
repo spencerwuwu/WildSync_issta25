@@ -1,0 +1,7 @@
+libcue__cd_get_cdtext__0
+libcue__cd_get_ntrack__0
+#libcue__cd_get_ntrack__1
+libcue__cd_get_rem__0
+#libcue__cd_get_track__0
+#libcue__cd_get_track__1
+libcue__cd_get_track__2

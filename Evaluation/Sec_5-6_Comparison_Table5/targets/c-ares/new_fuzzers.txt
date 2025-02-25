@@ -1,0 +1,6 @@
+c-ares__ares_getsock__0
+#c-ares__ares_process_fd__0
+#c-ares__ares_process_fd__1
+#c-ares__ares_process_fd__4
+#c-ares__ares_process_fd__5
+c-ares__ares_process_fd__6

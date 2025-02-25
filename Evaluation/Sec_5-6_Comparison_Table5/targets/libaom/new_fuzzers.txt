@@ -1,0 +1,8 @@
+libaom__aom_codec_encode__0
+#libaom__aom_codec_encode__1
+libaom__aom_img_add_metadata__0
+libaom__aom_img_plane_height__0
+libaom__aom_img_plane_width__0
+libaom__aom_img_remove_metadata__0
+#libaom__aom_img_remove_metadata__1
+libaom__aom_img_wrap__1

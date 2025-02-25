@@ -1,0 +1,7 @@
+libplacebo__pl_find_named_fmt__0
+libplacebo__pl_find_named_fmt__1
+libplacebo__pl_find_named_fmt__2
+libplacebo__pl_gpu_finish__0
+libplacebo__pl_gpu_finish__1
+libplacebo__pl_opengl_get__0
+libplacebo__pl_plane_find_fmt__0

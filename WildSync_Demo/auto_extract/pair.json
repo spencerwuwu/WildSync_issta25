@@ -1,0 +1,48 @@
+{
+  "replace_function": {
+    "function_name": "ov_read",
+    "args": [
+      [
+        "OggVorbis_File *",
+        "vf"
+      ],
+      [
+        "char *",
+        "buffer"
+      ],
+      [
+        "int",
+        "length"
+      ],
+      [
+        "int",
+        "bigendianp"
+      ],
+      [
+        "int",
+        "word"
+      ],
+      [
+        "int",
+        "sgned"
+      ],
+      [
+        "int *",
+        "bitstream"
+      ]
+    ]
+  },
+  "target_function": {
+    "function_name": "ov_time_seek",
+    "args": [
+      [
+        "OggVorbis_File *",
+        "vf"
+      ],
+      [
+        "ogg_int64_t",
+        "pos"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,2 @@
+vpx_dec_fuzzer_vp8
+vpx_dec_fuzzer_vp9

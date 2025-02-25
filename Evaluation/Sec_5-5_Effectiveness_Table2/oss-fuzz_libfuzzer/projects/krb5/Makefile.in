@@ -1,0 +1,179 @@
+mydir=tests$(S)new_fuzzing
+BUILDTOP=$(REL)..$(S)..
+
+LOCALINCLUDES = -I$(srcdir)/../../lib/krb5/ccache -I$(srcdir)/../../kdc \
+	-I$(srcdir)/../../util/profile
+NDROBJ = $(BUILDTOP)/kdc/ndr.o
+
+OBJS = \
+	krb5__gss_acquire_cred__0.o \
+  krb5__gss_import_name__4.o \
+  krb5__gss_import_name__5.o \
+  krb5__gss_import_name__6.o \
+  krb5__gss_import_name__8.o \
+  krb5__gss_inquire_mech_for_saslname__0.o \
+  krb5__gss_release_cred__0.o \
+  krb5__gss_release_cred__1.o \
+  krb5__gss_release_cred__2.o \
+  krb5__gss_release_cred__3.o \
+  krb5__gss_release_cred__4.o \
+  krb5__gss_release_cred__5.o \
+  krb5__gss_release_cred__6.o \
+  krb5__gss_release_cred__7.o \
+  krb5__gss_release_cred__8.o \
+  krb5__gss_release_cred__9.o \
+  krb5__gss_release_name__0.o \
+  krb5__gss_release_name__1.o \
+  krb5__gss_release_name__2.o \
+  krb5__gss_release_name__3.o \
+  krb5__gss_release_name__4.o \
+  krb5__gss_release_name__5.o \
+  krb5__gss_release_name__6.o \
+  krb5__gss_release_name__7.o \
+  krb5__gss_release_name__8.o \
+  krb5__gss_release_name__9.o
+
+SRCS = \
+	$(srcdir)/krb5__gss_acquire_cred__0.c \
+  $(srcdir)/krb5__gss_import_name__4.c \
+  $(srcdir)/krb5__gss_import_name__5.c \
+  $(srcdir)/krb5__gss_import_name__6.c \
+  $(srcdir)/krb5__gss_import_name__8.c \
+  $(srcdir)/krb5__gss_inquire_mech_for_saslname__0.c \
+  $(srcdir)/krb5__gss_release_cred__0.c \
+  $(srcdir)/krb5__gss_release_cred__1.c \
+  $(srcdir)/krb5__gss_release_cred__2.c \
+  $(srcdir)/krb5__gss_release_cred__3.c \
+  $(srcdir)/krb5__gss_release_cred__4.c \
+  $(srcdir)/krb5__gss_release_cred__5.c \
+  $(srcdir)/krb5__gss_release_cred__6.c \
+  $(srcdir)/krb5__gss_release_cred__7.c \
+  $(srcdir)/krb5__gss_release_cred__8.c \
+  $(srcdir)/krb5__gss_release_cred__9.c \
+  $(srcdir)/krb5__gss_release_name__0.c \
+  $(srcdir)/krb5__gss_release_name__1.c \
+  $(srcdir)/krb5__gss_release_name__2.c \
+  $(srcdir)/krb5__gss_release_name__3.c \
+  $(srcdir)/krb5__gss_release_name__4.c \
+  $(srcdir)/krb5__gss_release_name__5.c \
+  $(srcdir)/krb5__gss_release_name__6.c \
+  $(srcdir)/krb5__gss_release_name__7.c \
+  $(srcdir)/krb5__gss_release_name__8.c \
+  $(srcdir)/krb5__gss_release_name__9.c
+
+FUZZ_TARGETS= \
+	krb5__gss_acquire_cred__0 \
+  krb5__gss_import_name__4 \
+  krb5__gss_import_name__5 \
+  krb5__gss_import_name__6 \
+  krb5__gss_import_name__8 \
+  krb5__gss_inquire_mech_for_saslname__0 \
+  krb5__gss_release_cred__0 \
+  krb5__gss_release_cred__1 \
+  krb5__gss_release_cred__2 \
+  krb5__gss_release_cred__3 \
+  krb5__gss_release_cred__4 \
+  krb5__gss_release_cred__5 \
+  krb5__gss_release_cred__6 \
+  krb5__gss_release_cred__7 \
+  krb5__gss_release_cred__8 \
+  krb5__gss_release_cred__9 \
+  krb5__gss_release_name__0 \
+  krb5__gss_release_name__1 \
+  krb5__gss_release_name__2 \
+  krb5__gss_release_name__3 \
+  krb5__gss_release_name__4 \
+  krb5__gss_release_name__5 \
+  krb5__gss_release_name__6 \
+  krb5__gss_release_name__7 \
+  krb5__gss_release_name__8 \
+  krb5__gss_release_name__9
+
+all: $(FUZZ_TARGETS)
+
+# OSS-Fuzz requires fuzz targets to be linked with the C++ linker,
+# even if they are written in C.
+
+krb5__gss_acquire_cred__0: krb5__gss_acquire_cred__0.o $(KRB5_BASE_DEPLIBS)
+	$(CXX_LINK) -o $@ krb5__gss_acquire_cred__0.o -lkrad $(GSS_LIBS) $(NDROBJ) $(KRB5_BASE_LIBS) $(FUZZ_LDFLAGS)
+
+krb5__gss_import_name__4: krb5__gss_import_name__4.o $(KRB5_BASE_DEPLIBS)
+	$(CXX_LINK) -o $@ krb5__gss_import_name__4.o -lkrad $(GSS_LIBS) $(NDROBJ) $(KRB5_BASE_LIBS) $(FUZZ_LDFLAGS)
+
+krb5__gss_import_name__5: krb5__gss_import_name__5.o $(KRB5_BASE_DEPLIBS)
+	$(CXX_LINK) -o $@ krb5__gss_import_name__5.o -lkrad $(GSS_LIBS) $(NDROBJ) $(KRB5_BASE_LIBS) $(FUZZ_LDFLAGS)
+
+krb5__gss_import_name__6: krb5__gss_import_name__6.o $(KRB5_BASE_DEPLIBS)
+	$(CXX_LINK) -o $@ krb5__gss_import_name__6.o -lkrad $(GSS_LIBS) $(NDROBJ) $(KRB5_BASE_LIBS) $(FUZZ_LDFLAGS)
+
+krb5__gss_import_name__8: krb5__gss_import_name__8.o $(KRB5_BASE_DEPLIBS)
+	$(CXX_LINK) -o $@ krb5__gss_import_name__8.o -lkrad $(GSS_LIBS) $(NDROBJ) $(KRB5_BASE_LIBS) $(FUZZ_LDFLAGS)
+
+krb5__gss_inquire_mech_for_saslname__0: krb5__gss_inquire_mech_for_saslname__0.o $(KRB5_BASE_DEPLIBS)
+	$(CXX_LINK) -o $@ krb5__gss_inquire_mech_for_saslname__0.o -lkrad $(GSS_LIBS) $(NDROBJ) $(KRB5_BASE_LIBS) $(FUZZ_LDFLAGS)
+
+krb5__gss_release_cred__0: krb5__gss_release_cred__0.o $(KRB5_BASE_DEPLIBS)
+	$(CXX_LINK) -o $@ krb5__gss_release_cred__0.o -lkrad $(GSS_LIBS) $(NDROBJ) $(KRB5_BASE_LIBS) $(FUZZ_LDFLAGS)
+
+krb5__gss_release_cred__1: krb5__gss_release_cred__1.o $(KRB5_BASE_DEPLIBS)
+	$(CXX_LINK) -o $@ krb5__gss_release_cred__1.o -lkrad $(GSS_LIBS) $(NDROBJ) $(KRB5_BASE_LIBS) $(FUZZ_LDFLAGS)
+
+krb5__gss_release_cred__2: krb5__gss_release_cred__2.o $(KRB5_BASE_DEPLIBS)
+	$(CXX_LINK) -o $@ krb5__gss_release_cred__2.o -lkrad $(GSS_LIBS) $(NDROBJ) $(KRB5_BASE_LIBS) $(FUZZ_LDFLAGS)
+
+krb5__gss_release_cred__3: krb5__gss_release_cred__3.o $(KRB5_BASE_DEPLIBS)
+	$(CXX_LINK) -o $@ krb5__gss_release_cred__3.o -lkrad $(GSS_LIBS) $(NDROBJ) $(KRB5_BASE_LIBS) $(FUZZ_LDFLAGS)
+
+krb5__gss_release_cred__4: krb5__gss_release_cred__4.o $(KRB5_BASE_DEPLIBS)
+	$(CXX_LINK) -o $@ krb5__gss_release_cred__4.o -lkrad $(GSS_LIBS) $(NDROBJ) $(KRB5_BASE_LIBS) $(FUZZ_LDFLAGS)
+
+krb5__gss_release_cred__5: krb5__gss_release_cred__5.o $(KRB5_BASE_DEPLIBS)
+	$(CXX_LINK) -o $@ krb5__gss_release_cred__5.o -lkrad $(GSS_LIBS) $(NDROBJ) $(KRB5_BASE_LIBS) $(FUZZ_LDFLAGS)
+
+krb5__gss_release_cred__6: krb5__gss_release_cred__6.o $(KRB5_BASE_DEPLIBS)
+	$(CXX_LINK) -o $@ krb5__gss_release_cred__6.o -lkrad $(GSS_LIBS) $(NDROBJ) $(KRB5_BASE_LIBS) $(FUZZ_LDFLAGS)
+
+krb5__gss_release_cred__7: krb5__gss_release_cred__7.o $(KRB5_BASE_DEPLIBS)
+	$(CXX_LINK) -o $@ krb5__gss_release_cred__7.o -lkrad $(GSS_LIBS) $(NDROBJ) $(KRB5_BASE_LIBS) $(FUZZ_LDFLAGS)
+
+krb5__gss_release_cred__8: krb5__gss_release_cred__8.o $(KRB5_BASE_DEPLIBS)
+	$(CXX_LINK) -o $@ krb5__gss_release_cred__8.o -lkrad $(GSS_LIBS) $(NDROBJ) $(KRB5_BASE_LIBS) $(FUZZ_LDFLAGS)
+
+krb5__gss_release_cred__9: krb5__gss_release_cred__9.o $(KRB5_BASE_DEPLIBS)
+	$(CXX_LINK) -o $@ krb5__gss_release_cred__9.o -lkrad $(GSS_LIBS) $(NDROBJ) $(KRB5_BASE_LIBS) $(FUZZ_LDFLAGS)
+
+krb5__gss_release_name__0: krb5__gss_release_name__0.o $(KRB5_BASE_DEPLIBS)
+	$(CXX_LINK) -o $@ krb5__gss_release_name__0.o -lkrad $(GSS_LIBS) $(NDROBJ) $(KRB5_BASE_LIBS) $(FUZZ_LDFLAGS)
+
+krb5__gss_release_name__1: krb5__gss_release_name__1.o $(KRB5_BASE_DEPLIBS)
+	$(CXX_LINK) -o $@ krb5__gss_release_name__1.o -lkrad $(GSS_LIBS) $(NDROBJ) $(KRB5_BASE_LIBS) $(FUZZ_LDFLAGS)
+
+krb5__gss_release_name__2: krb5__gss_release_name__2.o $(KRB5_BASE_DEPLIBS)
+	$(CXX_LINK) -o $@ krb5__gss_release_name__2.o -lkrad $(GSS_LIBS) $(NDROBJ) $(KRB5_BASE_LIBS) $(FUZZ_LDFLAGS)
+
+krb5__gss_release_name__3: krb5__gss_release_name__3.o $(KRB5_BASE_DEPLIBS)
+	$(CXX_LINK) -o $@ krb5__gss_release_name__3.o -lkrad $(GSS_LIBS) $(NDROBJ) $(KRB5_BASE_LIBS) $(FUZZ_LDFLAGS)
+
+krb5__gss_release_name__4: krb5__gss_release_name__4.o $(KRB5_BASE_DEPLIBS)
+	$(CXX_LINK) -o $@ krb5__gss_release_name__4.o -lkrad $(GSS_LIBS) $(NDROBJ) $(KRB5_BASE_LIBS) $(FUZZ_LDFLAGS)
+
+krb5__gss_release_name__5: krb5__gss_release_name__5.o $(KRB5_BASE_DEPLIBS)
+	$(CXX_LINK) -o $@ krb5__gss_release_name__5.o -lkrad $(GSS_LIBS) $(NDROBJ) $(KRB5_BASE_LIBS) $(FUZZ_LDFLAGS)
+
+krb5__gss_release_name__6: krb5__gss_release_name__6.o $(KRB5_BASE_DEPLIBS)
+	$(CXX_LINK) -o $@ krb5__gss_release_name__6.o -lkrad $(GSS_LIBS) $(NDROBJ) $(KRB5_BASE_LIBS) $(FUZZ_LDFLAGS)
+
+krb5__gss_release_name__7: krb5__gss_release_name__7.o $(KRB5_BASE_DEPLIBS)
+	$(CXX_LINK) -o $@ krb5__gss_release_name__7.o -lkrad $(GSS_LIBS) $(NDROBJ) $(KRB5_BASE_LIBS) $(FUZZ_LDFLAGS)
+
+krb5__gss_release_name__8: krb5__gss_release_name__8.o $(KRB5_BASE_DEPLIBS)
+	$(CXX_LINK) -o $@ krb5__gss_release_name__8.o -lkrad $(GSS_LIBS) $(NDROBJ) $(KRB5_BASE_LIBS) $(FUZZ_LDFLAGS)
+
+krb5__gss_release_name__9: krb5__gss_release_name__9.o $(KRB5_BASE_DEPLIBS)
+	$(CXX_LINK) -o $@ krb5__gss_release_name__9.o -lkrad $(GSS_LIBS) $(NDROBJ) $(KRB5_BASE_LIBS) $(FUZZ_LDFLAGS)
+
+
+install:
+
+clean:
+	$(RM) $(FUZZ_TARGETS)

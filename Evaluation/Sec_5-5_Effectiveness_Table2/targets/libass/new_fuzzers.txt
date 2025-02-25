@@ -1,0 +1,10 @@
+libass__ass_add_font__0
+libass__ass_add_font__0__tweak0
+libass__ass_flush_events__0
+#libass__ass_flush_events__1
+#libass__ass_flush_events__2
+#libass__ass_flush_events__3
+libass__ass_process_chunk__0
+libass__ass_process_chunk__0__tweak0
+libass__ass_process_codec_private__0
+libass__ass_process_codec_private__0__tweak0

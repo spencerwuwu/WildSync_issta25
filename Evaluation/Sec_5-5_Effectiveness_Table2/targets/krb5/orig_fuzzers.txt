@@ -1,0 +1,11 @@
+fuzz_chpw
+fuzz_gss
+fuzz_json
+fuzz_krad
+fuzz_krb5_ticket
+fuzz_marshal_cred
+fuzz_marshal_princ
+fuzz_ndr
+fuzz_pac
+fuzz_profile
+fuzz_util

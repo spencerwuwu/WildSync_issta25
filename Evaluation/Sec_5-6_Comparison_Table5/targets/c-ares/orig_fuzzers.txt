@@ -1,0 +1,2 @@
+ares_create_query_fuzzer
+ares_parse_reply_fuzzer

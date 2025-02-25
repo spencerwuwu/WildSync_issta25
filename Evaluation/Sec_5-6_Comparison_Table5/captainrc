@@ -1,0 +1,33 @@
+###
+## Configuration parameters
+###
+
+# WORKDIR: change me if you would like to storge data somewhere else 
+WORKDIR=./workdir
+
+# REPEAT: PLEASE DO NOT change this
+REPEAT=5
+
+# CHANGE ME (secondes)
+TIMEOUT=86400
+
+# PLEASE DO NOT change this
+ONLY_CATEGORY=0
+
+# FUZZER: PLEASE DO NOT change this
+FUZZERS=(libfuzzer)
+
+# CHANGE ME (libraries to fuzz)
+libfuzzer_TARGETS=(
+    #c-ares  
+    #cjson
+    #file
+    #lcms
+    #libaom
+    #libpcap
+    #libpng
+    #libvpx
+    #sqlite3
+    #zlib
+)
+

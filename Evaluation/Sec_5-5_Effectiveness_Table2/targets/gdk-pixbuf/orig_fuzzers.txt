@@ -1,0 +1,5 @@
+animation_fuzzer
+pixbuf_cons_fuzzer
+pixbuf_file_fuzzer
+pixbuf_scale_fuzzer
+stream_fuzzer

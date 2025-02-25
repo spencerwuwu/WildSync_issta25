@@ -1,0 +1,4 @@
+fribidi__fribidi_get_joining_types__0
+#fribidi__fribidi_get_joining_types__1
+fribidi__fribidi_join_arabic__0
+fribidi__fribidi_shape__0

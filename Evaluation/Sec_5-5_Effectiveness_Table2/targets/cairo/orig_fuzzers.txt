@@ -1,0 +1,5 @@
+pdf_surface_fuzzer
+raster_fuzzer
+surface_write_png_fuzzer
+text_glyphs_fuzzer
+svg-render-fuzzer

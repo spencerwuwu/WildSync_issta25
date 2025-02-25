@@ -1,0 +1,3 @@
+lyd_parse_mem_json
+lyd_parse_mem_xml
+lys_parse_mem
