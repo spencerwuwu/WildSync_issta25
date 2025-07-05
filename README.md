@@ -7,6 +7,19 @@ The artifact is divided into two parts:
 1. Demo for the synthesis of fuzzing harnness (`WildSync_Demo/`)
 2. Reproduction of the evaluation results (`Evaluation/`)
 
+## Citing Us
+```
+@article{wu2025wildsync,
+  title={WildSync: Automated Fuzzing Harness Synthesis via Wild API Usage Recovery},
+  author={Wu, Wei-Cheng and Nagy, Stefan and Hauser, Christophe},
+  journal={Proceedings of the ACM on Software Engineering},
+  volume={2},
+  number={ISSTA},
+  pages={963--984},
+  year={2025},
+  publisher={ACM New York, NY, USA}
+}
+```
 
 ## System requirements
 The artifact has been tested on Linux machines with the following requirements:
